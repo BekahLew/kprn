@@ -17,7 +17,6 @@
             body {
                 background-color: #e5e5d8;
                 text-align: center;
-                overflow: hidden;
 
                 &::before {
                     content: "";
@@ -54,6 +53,8 @@
             .radio {
                 position: relative;
                 height: 20rem;
+                overflow: hidden;
+                
                 &::before {
                     content: "";
                     background-image: url(images/bg-image.png);
@@ -131,6 +132,10 @@
                         top: -7rem;
                         max-width: 200px;
                     }
+                }
+
+                .sponsor {
+                    flex-direction: column;
                 }
             }
 
