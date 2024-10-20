@@ -15,14 +15,27 @@
         <style>
             body {
                 background-color: #e5e5d8;
-                text-align: center;
+                /* text-align: center;
                 background-image: url("images/background-image-mobile.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
                 min-height: 100vh;
-                background-position: center;
-                &::before {
+                background-position: center; */
+                /* &::before {
+                    content: "";
+                    background-image: url("images/background-image-mobile.png");
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 200px;
+                    height: 200px;
+                    background-repeat: no-repeat;
+                } */
+            }
+
+            .radio {
+              &::before {
                     content: "";
                     background-image: url("images/background-image-mobile.png");
                     position: absolute;
@@ -57,6 +70,11 @@
                 body {
                     background-image: url("images/background-image.png");
                 }
+
+                #remarkbox-div {
+                  width: 80%;
+                  margin: 0 auto;
+                }
             }
         </style>
     </head>
@@ -65,9 +83,8 @@
         <h2 class="subtitle">kprnradio.com</h2>
         <h3 class="heading-medium">Gig Harbor Rocks!</h3>
         <h3>To listen, just click the play button</h3>
-
-        <script src="//myradiostream.com/embed/DANTOWEY"></script>
-
+        <div class="radio"><script src="//myradiostream.com/embed/DANTOWEY"></script></div>
+        
         <h2>Leave a comment!</h2>
         <!-- Remarkbox - Your readers want to communicate with you -->
         <div id="remarkbox-div">
