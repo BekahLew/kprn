@@ -17,6 +17,7 @@
             body {
                 background-color: #e5e5d8;
                 text-align: center;
+                overflow: hidden;
 
                 &::before {
                     content: "";
@@ -95,6 +96,11 @@
                 margin-bottom: 2rem;
             }
 
+            .sponsor {
+                display: flex;
+                justify-content: center;
+            }
+
             .memories-to-dvd {
                 width: 12rem;
                 margin-left: .8rem;
@@ -138,6 +144,10 @@
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                 }
+
+                .radio::before {
+                    width: 150%;
+                }
             }
         </style>
     </head>
@@ -151,7 +161,7 @@
         </div>
         <div class="sponsor">
             <h3>Please visit our sponsor: </h3>
-            <img class="memories-to-dvd" src="images/memories-to-dvd.png" alt="logo for memories to dvd">
+            <a href="https://memoriestodvd.com/" target="_blank"><img class="memories-to-dvd" src="images/memories-to-dvd.png" alt="logo for memories to dvd"></a>
         </div>
         <hr>
         <h2>Leave a comment!</h2>
