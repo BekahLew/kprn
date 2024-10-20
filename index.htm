@@ -15,13 +15,7 @@
         <style>
             body {
                 background-color: #e5e5d8;
-                /* text-align: center;
-                background-image: url("images/background-image-mobile.png");
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 100%;
-                min-height: 100vh;
-                background-position: center; */
+                text-align: center;
                 /* &::before {
                     content: "";
                     background-image: url("images/background-image-mobile.png");
@@ -36,8 +30,7 @@
 
             .radio {
               &::before {
-                    content: "";
-                    background-image: url("images/background-image-mobile.png");
+                    content: url("images/background-image-mobile.png");
                     position: absolute;
                     left: 0;
                     bottom: 0;
@@ -67,8 +60,16 @@
             }
 
             @media (min-width: 640px) {
-                body {
-                    background-image: url("images/background-image.png");
+                .radio {
+                    &::before {
+                        content: "";
+                        background-image: url("images/background-image.png");
+                        top: 0;
+                        background-repeat: no-repeat;
+                        z-index: -1;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 #remarkbox-div {
